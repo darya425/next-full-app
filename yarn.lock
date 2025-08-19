@@ -730,7 +730,7 @@
 
 "@kinde-oss/kinde-auth-nextjs@^2.8.6":
   version "2.8.6"
-  resolved "https://registry.npmjs.org/@kinde-oss/kinde-auth-nextjs/-/kinde-auth-nextjs-2.8.6.tgz"
+  resolved "https://registry.yarnpkg.com/@kinde-oss/kinde-auth-nextjs/-/kinde-auth-nextjs-2.8.6.tgz#c27610cc0672b86f481104cce6237584f14888b8"
   integrity sha512-AvBu3Aq2NZOj7mSbI1l3Pxnd9TBoFjL0ltrml4+Olbwd2p7vIdX1AMP9eJX8mt3igxQYcxFEJnDj5KdA59YBJA==
   dependencies:
     "@kinde-oss/kinde-typescript-sdk" "2.12.0"
@@ -779,6 +779,15 @@
   dependencies:
     "@kinde/jwt-decoder" "^0.2.0"
     jsrsasign "^11.1.0"
+
+"@kinde/management-api-js@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@kinde/management-api-js/-/management-api-js-0.14.0.tgz#0881b5374c255539199b34120b528397d8261e26"
+  integrity sha512-4BUsr7+eHI9hIFGkqasmQ5oUAYiM2LaKmQVyOB4Gf5K+7DToHXiHZCmlgB/syeu3cBzItj04zLgOjEdg1lkXNA==
+  dependencies:
+    "@kinde/jwt-decoder" "^0.2.0"
+    aws-jwt-verify "^5.0.0"
+    dotenv "^16.4.5"
 
 "@napi-rs/wasm-runtime@^0.2.11":
   version "0.2.12"
@@ -2456,6 +2465,11 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
+aws-jwt-verify@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/aws-jwt-verify/-/aws-jwt-verify-5.1.0.tgz#13613c94e9bfbd4c235a8b15ffcf79a731efa387"
+  integrity sha512-98ioOBMyrLU5jW5rPvkJo20XlNB2rAX3tZR3BM6AamfBkOoSRLV1EyGkbgHQzgFOWyQ7yV8+tce6M24rOpMkgw==
+
 axe-core@^4.10.0:
   version "4.10.3"
   resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.10.3.tgz"
@@ -2765,7 +2779,7 @@ doctrine@^2.1.0:
   dependencies:
     esutils "^2.0.2"
 
-dotenv@^16.3.1:
+dotenv@^16.3.1, dotenv@^16.4.5:
   version "16.6.1"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz"
   integrity sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==
@@ -4106,9 +4120,14 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+next-safe-action@^8.0.10:
+  version "8.0.10"
+  resolved "https://registry.yarnpkg.com/next-safe-action/-/next-safe-action-8.0.10.tgz#6d24bbe130c981d91c0c8769f81d66364dbfbd57"
+  integrity sha512-5iroUKcdASIqORaIVCVqol7o3MTsNZAr7k2FNeoZMZtIGxIROwLeGmnw0rF0ftbISUr9ceW9IOk/hSq/ZTdgvw==
+
 next-themes@^0.4.6:
   version "0.4.6"
-  resolved "https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.4.6.tgz#8d7e92d03b8fea6582892a50a928c9b23502e8b6"
   integrity sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==
 
 next@15.4.5:
@@ -4743,6 +4762,11 @@ simple-swizzle@^0.2.2:
   integrity sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
   dependencies:
     is-arrayish "^0.3.1"
+
+sonner@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/sonner/-/sonner-2.0.7.tgz#810c1487a67ec3370126e0f400dfb9edddc3e4f6"
+  integrity sha512-W6ZN4p58k8aDKA4XPcx2hpIQXBRAgyiWVkYhT7CvK6D3iAu7xjvVyhQHg2/iaKJZ1XVJ4r7XuwGL+WGEK37i9w==
 
 source-map-js@^1.0.2, source-map-js@^1.2.1:
   version "1.2.1"
