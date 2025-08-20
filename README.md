@@ -1,4 +1,4 @@
-User Stories for Repair Shop App
+User Stories for Repair Shop App </br>
  Replace current sticky note system
  Add a public facing page with basic contact info
  Add a passwordless employee login to the app
