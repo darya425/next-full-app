@@ -1,11 +1,8 @@
 'use client';
 
 import type { SelectCustomerSchemaType } from '@/zod-schemas/customer';
-
 import { CellContext, createColumnHelper, flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table';
-
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,12 +11,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-
 import { Button } from '@/components/ui/button';
-
 import { MoreHorizontal, TableOfContents } from 'lucide-react';
-
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 type Props = {
@@ -27,7 +20,6 @@ type Props = {
 };
 
 export default function CustomerTable({ data }: Props) {
-  const router = useRouter();
 
   const columnHeadersArray: Array<keyof SelectCustomerSchemaType> = [
     'firstName',

@@ -90,6 +90,7 @@ export default function CustomerForm({ customer, isManager = false }: Props) {
       }
     },
     onError({ error }) {
+      console.log(error);
       toast.error('Error', { description: 'Save Failed' });
     },
   });

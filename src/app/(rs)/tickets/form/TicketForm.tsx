@@ -57,7 +57,7 @@ export default function TicketForm({ customer, ticket, techs, isEditable = true,
         toast.success('Success! 🎉 ', { description: data.message });
       }
     },
-    onError({ error }) {
+    onError() {
       toast.error('Error', { description: 'Save Failed' });
     },
   });

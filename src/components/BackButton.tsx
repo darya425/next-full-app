@@ -13,7 +13,7 @@ type Props = {
 export function BackButton({ title, variant, className, ...props }: Props) {
   const router = useRouter();
   return (
-    <Button variant={variant} className={className} onClick={() => router.back()} title={title}>
+    <Button variant={variant} className={className} onClick={() => router.back()} title={title} {...props}>
       {title}
     </Button>
   );

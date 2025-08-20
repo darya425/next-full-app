@@ -50,6 +50,7 @@ export default function TicketTable({ data }: Props) {
   const pageIndex = useMemo(() => {
     const page = searchParams.get('page');
     return page ? parseInt(page) - 1 : 0;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams.get('page')]);
 
   const columnHeadersArray: Array<keyof RowType> = [
