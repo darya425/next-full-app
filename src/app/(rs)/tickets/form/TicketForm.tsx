@@ -27,18 +27,17 @@ type Props = {
     description: string;
   }[];
   isEditable?: boolean;
+  isManager?: boolean | undefined;
 };
 
-export default function TicketForm({ customer, ticket, techs, isEditable = true }: Props) {
-  const isManager = Array.isArray(techs);
-
+export default function TicketForm({ customer, ticket, techs, isEditable = true, isManager = false }: Props) {
   const defaultValues: InsertTicketSchemaType = {
     id: ticket?.id ?? '(New)',
     customerId: ticket?.customerId ?? customer.id,
     title: ticket?.title ?? '',
     description: ticket?.description ?? '',
     completed: ticket?.completed ?? false,
-    tech: ticket?.tech ?? 'new-ticket@example.com',
+    tech: ticket?.tech.toLowerCase() ?? 'new-ticket@example.com',
   };
 
   const form = useForm<InsertTicketSchemaType>({
@@ -84,7 +83,7 @@ export default function TicketForm({ customer, ticket, techs, isEditable = true 
           <div className="flex flex-col gap-4 w-full max-w-xs">
             <InputWithLabel<InsertTicketSchemaType> fieldTitle="Title" nameInSchema="title" disabled={!isEditable} />
 
-            {isManager ? (
+            {isManager && techs ? (
               <SelectWithLabel<InsertTicketSchemaType>
                 fieldTitle="Tech ID"
                 nameInSchema="tech"
